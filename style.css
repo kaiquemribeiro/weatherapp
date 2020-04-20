@@ -12,14 +12,14 @@ body {
 
 h1 {
     text-align: left;
-    font-family: "Helvetica";
+    font-family: 'Roboto', sans-serif;
     color: aliceblue;
     font-size: 50px;
     
 }
 
 .page-footer{
-    font-family: "Helvetica";
+    font-family: 'Roboto', sans-serif;
     padding: 50px 50px;
     color: aliceblue;
     position: absolute;
@@ -36,8 +36,9 @@ h1 {
     height: 53px;
     color:white;
     font-size: 25px;
-    font-family: "Helvetica";
+    font-family: 'Roboto', sans-serif;
     border-radius: 4px;
+    border: 1px solid;
 }
 .button{
     margin: auto;
@@ -46,7 +47,7 @@ h1 {
     color:black;
     text-align: center;
     font-size: 25px;
-    font-family: "Helvetica";
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
     padding: 15px 20px;
     margin-left: 15px;
