@@ -12,14 +12,14 @@ body {
 
 h1 {
     text-align: left;
-    font-family: "Segan Light";
+    font-family: "Helvetica";
     color: aliceblue;
     font-size: 50px;
     
 }
 
 .page-footer{
-    font-family: "Segan Light";
+    font-family: "Helvetica";
     padding: 50px 50px;
     color: aliceblue;
     position: absolute;
@@ -36,7 +36,7 @@ h1 {
     height: 53px;
     color:white;
     font-size: 25px;
-    font-family: "Segan Light";
+    font-family: "Helvetica";
     border-radius: 4px;
 }
 .button{
@@ -46,7 +46,7 @@ h1 {
     color:black;
     text-align: center;
     font-size: 25px;
-    font-family: "Segan Light";
+    font-family: "Helvetica";
     cursor: pointer;
     padding: 15px 20px;
     margin-left: 15px;
