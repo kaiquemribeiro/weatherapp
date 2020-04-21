@@ -16,6 +16,7 @@ function searchWather(search){
     })
 }
 function init(resultFromServer){
+    console.log(resultFromServer)
 
     let weatherDescription = document.getElementById('weatherDescriptionHeader')
     let temperature = document.getElementById('temperature')
@@ -24,12 +25,20 @@ function init(resultFromServer){
     let cityname = document.getElementById('cityname')
     let countryName = document.getElementById('country')
 
-    cityname.innerText = resultFromServer.name
-    temperature.innerText = Math.floor(resultFromServer.main.temp) + 'ºC'
-    humidity.innerText = 'Humidity ' + resultFromServer.main.humidity + '%'
-    windSpeed.innerText = 'Winds at ' + resultFromServer.wind.speed + ' km/h'
-    weatherDescription = resultFromServer.weather[0].description
-    weatherDescriptionHeader.innerText = weatherDescription
-    countryName.innerText = resultFromServer.sys.country
-
+    if (resultFromServer.cod != 404){
+        cityname.innerText = resultFromServer.name
+        temperature.innerText = Math.floor(resultFromServer.main.temp) + 'ºC'
+        humidity.innerText = 'Humidity ' + resultFromServer.main.humidity + '%'
+        windSpeed.innerText = 'Winds at ' + resultFromServer.wind.speed + ' km/h'
+        weatherDescription = resultFromServer.weather[0].description
+        weatherDescriptionHeader.innerText = weatherDescription
+        countryName.innerText = resultFromServer.sys.country
+    }else{
+            cityname.innerText = 'City not found'
+            temperature.innerText = ''
+            humidity.innerText = ''
+            windSpeed.innerText = ''
+            weatherDescriptionHeader.innerText = ''
+            countryName.innerText = ''
+    }
 }
