@@ -9,7 +9,7 @@ document.getElementById('searchBtn').addEventListener('click', () => {
 })
 
 function searchWather(search){
-    fetch(`api.openweathermap.org/data/2.5/weather?q=${search}&appid=${myAPI}&units=${unit}`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${myAPI}&units=${unit}`).then(result => {
         return result.json();
     }).then(result => {
         init(result)
