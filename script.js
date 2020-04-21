@@ -23,10 +23,12 @@ function init(resultFromServer){
     let humidity = document.getElementById('humidity')
     let windSpeed = document.getElementById('windSpeed')
     let cityname = document.getElementById('cityname')
+    let minmax = document.getElementById('minmax')
 
     if (resultFromServer.cod != 404){
         cityname.innerText = resultFromServer.name + ' - ' + resultFromServer.sys.country
         temperature.innerText = Math.floor(resultFromServer.main.temp) + 'ºC'
+        minmax.innerText = 'Min ' + Math.floor(resultFromServer.main.temp_min)+ 'ºC ' + ' Max ' + Math.floor(resultFromServer.main.temp_max) + 'ºC'
         humidity.innerText = 'Humidity ' + resultFromServer.main.humidity + '%'
         windSpeed.innerText = 'Winds at ' + resultFromServer.wind.speed + ' km/h'
         weatherDescription = resultFromServer.weather[0].description
