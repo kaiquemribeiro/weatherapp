@@ -11,6 +11,7 @@ function searchWather(searchMethod){
 }
 function init(resultFromServer){
     console.log(resultFromServer)
+
 }
 
 document.getElementById('searchBtn').addEventListener('click', () => {
