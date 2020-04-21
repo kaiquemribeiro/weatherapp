@@ -128,3 +128,10 @@ h1 {
     font-family: 'Karla', sans-serif;
     color: #EC7775;
 }
+
+#weatherContainer{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
