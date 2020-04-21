@@ -39,6 +39,6 @@ function init(resultFromServer){
             humidity.innerText = ''
             windSpeed.innerText = ''
             weatherDescriptionHeader.innerText = ''
-            countryName.innerText = ''
+            minmax.innerText = ''
     }
 }
