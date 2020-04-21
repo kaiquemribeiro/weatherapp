@@ -3,8 +3,8 @@ a{
     text-decoration: none;
 }
 body {
-    background-color: #86B6DE;
-    background-image: url(https://i.imgur.com/txa7lLk.png);
+    background-color:#A0D0F8;
+    background-image: url(https://i.imgur.com/wDxTrPS.png);
     
 }
 
@@ -27,18 +27,20 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 80px;
+    font-family: 'B612', sans-serif;
+    color: #EC7775;
 }
 
 .location{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'B612', sans-serif;
     font-size: 20px;
     color: white;
     text-shadow: 1px 1px 2px black;
 }
 
 .page-footer{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'B612', sans-serif;
     padding: 50px 50px;
     color: white;
     position: absolute;
@@ -52,9 +54,9 @@ h1 {
     width: 50%;
     max-width: 280px;
     height: 53px;
-    color: black;
+    color: #EC7775;
     font-size: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'B612', sans-serif;
     padding: 10px 15px;
     border: none;
     background: none;
@@ -62,7 +64,7 @@ h1 {
     border-bottom: 1px solid;
 }
 ::placeholder{
-    color: black;
+    color: #EC7775;
 }
 
 .button{
@@ -72,4 +74,50 @@ h1 {
     border-radius: 4px;
     padding: 15px 20px;
     margin-left: 15px;
+    font-family: 'B612', sans-serif;
+    color: #EC7775;
+}
+
+.locbtn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 15px 20px;
+        font-family: 'B612', sans-serif;
+        color: #EC7775;
+}
+
+#cityname{
+    margin-top:  50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'B612', sans-serif;
+    color: #EC7775;
+}
+
+#temperature{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Karla', sans-serif;
+    color: #EC7775;
+}
+
+.info{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    color: #EC7775;
+}
+#weatherDescriptionHeader{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    color: #EC7775;
+}
+
+#country{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    color: #EC7775;
 }
