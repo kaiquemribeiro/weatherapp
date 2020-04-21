@@ -23,16 +23,14 @@ function init(resultFromServer){
     let humidity = document.getElementById('humidity')
     let windSpeed = document.getElementById('windSpeed')
     let cityname = document.getElementById('cityname')
-    let countryName = document.getElementById('country')
 
     if (resultFromServer.cod != 404){
-        cityname.innerText = resultFromServer.name
+        cityname.innerText = resultFromServer.name + ' - ' + resultFromServer.sys.country
         temperature.innerText = Math.floor(resultFromServer.main.temp) + 'ºC'
         humidity.innerText = 'Humidity ' + resultFromServer.main.humidity + '%'
         windSpeed.innerText = 'Winds at ' + resultFromServer.wind.speed + ' km/h'
         weatherDescription = resultFromServer.weather[0].description
         weatherDescriptionHeader.innerText = weatherDescription
-        countryName.innerText = resultFromServer.sys.country
     }else{
             cityname.innerText = 'City not found'
             temperature.innerText = ''
