@@ -5,7 +5,6 @@ let search;
 function getLocation(){
     navigator.geolocation.getCurrentPosition(function(position) {
     searchLoc(position.coords.latitude, position.coords.longitude);
-    console.log(position.coords.longitude, position.coords.latitude)
 })
 }
 
