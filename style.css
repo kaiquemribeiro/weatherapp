@@ -28,8 +28,7 @@ a{
 }
 
 body {
-    background-color:#A0D0F8;
-    background: url(https://i.imgur.com/wDxTrPS.png) center center no-repeat fixed;
+    background-image: url(sunbackgound.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
