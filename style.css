@@ -133,7 +133,7 @@ button:hover{
 #weatherIcon{
     height: 70px;
     width: 70px;
-    position:absolute;
+    position: absolute;
     top:50%;
     left:50%;
     margin-top: 40px;
