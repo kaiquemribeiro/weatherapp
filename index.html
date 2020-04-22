@@ -10,7 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-        <h1>WEATHER</h1>
+    <ul class="topnav">
+        <li style="float:left"><a href="https://kaiquemribeiro.github.io/weatherapp/">Home</a></li>
+        <li><a href="https://github.com/kaiquemribeiro/weatherapp"target="_blank">Code</a></li>
+        <li style="float:right"><a href="https://github.com/kaiquemribeiro/"target="_blank">About</a></li>
+      </ul>    
+    <h1>WEATHER</h1>
         <div style="display:flex;justify-content:center;align-items:center;">
             <div><input type="text" placeholder=" Enter a city" id="citynameinput" autofocus> 
             <button class="button" id="searchBtn" >Search</button></div>
@@ -19,7 +24,7 @@
             <div><button class="locbtn" id="locbtn">➢ Use my location</button></div></div>
     
     <div id="weatherContainer">
-        <div><img src="" alt="" id="weatherIcon"></div> 
+        <img src="" alt="" id="weatherIcon">
         <div id="cityname"></div>
             <div id="temperature"></div>
             <div id="minmax"></div>
