@@ -29,7 +29,11 @@ a{
 
 body {
     background-color:#A0D0F8;
-    background: url(https://i.imgur.com/wDxTrPS.png) no-repeat;
+    background: url(https://i.imgur.com/wDxTrPS.png) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     
 }
 
