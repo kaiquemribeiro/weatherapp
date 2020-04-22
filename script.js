@@ -2,11 +2,28 @@ let myAPI = '32226dc9cba44aa4ee6dd5aa71c0a863';
 let unit = 'metric';
 let search;
 
+function getLocation(){
+    navigator.geolocation.getCurrentPosition(function(position) {
+    searchLoc(position.coords.latitude, position.coords.longitude);
+    console.log(position.coords.longitude, position.coords.latitude)
+})
+}
+
+
+
 document.getElementById('searchBtn').addEventListener('click', () => {
     let searchTerm = document.getElementById('citynameinput').value 
     if (searchTerm)
         searchWather(searchTerm)
 })
+
+function searchLoc(latitude, longitude){
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${myAPI}&units=${unit}`).then(result => {
+        return result.json();
+    }).then(result => {
+        init(result)
+    })
+}
 
 function searchWather(search){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${myAPI}&units=${unit}`).then(result => {
