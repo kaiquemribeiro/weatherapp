@@ -58,6 +58,6 @@ function init(resultFromServer){
             windSpeed.innerText = ''
             weatherDescriptionHeader.innerText = ''
             minmax.innerText = ''
-            weatherIcon.src = 'https://i.imgur.com/nclYkrT.png'
+            weatherIcon.src = ''
     }
 }
