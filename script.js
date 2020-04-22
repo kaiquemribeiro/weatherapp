@@ -44,7 +44,7 @@ function init(resultFromServer){
     let weatherIcon = document.getElementById('weatherIcon')
 
     if (resultFromServer.cod != 404){
-        weatherIcon.src = 'http://openweathermap.org/img/wn/' + resultFromServer.weather[0].icon + '.png'
+        weatherIcon.src = 'https://openweathermap.org/img/wn/' + resultFromServer.weather[0].icon + '.png'
         cityname.innerText = resultFromServer.name + ' - ' + resultFromServer.sys.country
         temperature.innerText = Math.floor(resultFromServer.main.temp) + 'ºC'
         minmax.innerText = 'Min ' + Math.floor(resultFromServer.main.temp_min)+ 'ºC ' + ' Max ' + Math.floor(resultFromServer.main.temp_max) + 'ºC'
@@ -54,12 +54,12 @@ function init(resultFromServer){
         weatherDescriptionHeader.innerText = weatherDescription
         
     }else{
-            cityname.innerText = 'City not found'
+            cityname.innerText = 'oops! city not found'
             temperature.innerText = ''
             humidity.innerText = ''
             windSpeed.innerText = ''
             weatherDescriptionHeader.innerText = ''
             minmax.innerText = ''
-            weatherIcon.src = ''
+            weatherIcon.src = 'https://i.imgur.com/nclYkrT.png'
     }
 }
