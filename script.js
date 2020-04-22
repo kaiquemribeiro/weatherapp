@@ -9,8 +9,6 @@ function getLocation(){
 })
 }
 
-
-
 document.getElementById('searchBtn').addEventListener('click', () => {
     let searchTerm = document.getElementById('citynameinput').value 
     if (searchTerm)
