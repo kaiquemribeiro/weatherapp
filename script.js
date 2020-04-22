@@ -30,7 +30,6 @@ function searchWather(search){
     })
 }
 function init(resultFromServer){
-    console.log(resultFromServer)
 
     let weatherDescription = document.getElementById('weatherDescriptionHeader')
     let temperature = document.getElementById('temperature')
