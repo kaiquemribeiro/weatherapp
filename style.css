@@ -17,11 +17,6 @@
     font-family: 'B612', sans-serif;
 }
 
-.topnav a.active {
-    background-color: transparent;
-    color: white;
-}
-
 .topnav a:hover {
     background-color: transparent;
     color: black;
