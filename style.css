@@ -42,6 +42,12 @@ h1 {
     color: #EC7775;
 }
 
+.search--city, .location--button {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 #citynameinput{
     -webkit-appearance: none;
     width: 50%;
