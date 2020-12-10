@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel = "icon" href =  "sunicon.png" type = "image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,22 +19,24 @@
     </ul>    
     
     <h1>weather</h1>
-        <div class="search--city">
+        <div class="search--city" style="display:flex;justify-content:center;align-items:center;">
             <div><input type="text" placeholder=" Enter a city" id="citynameinput"> 
             <button class="button" id="searchBtn" >Search</button></div>
         </div>
         <div class="location--button">
-            <div><button class="locbtn" id="locbtn" onclick=getLocation()>➢ Use my location</button></div>
+            <div><button class="location--button" id="locbtn" onclick=getLocation()>➢ Use my location</button></div>
         </div>
     
     <div id="weatherContainer">
-        <img src="" alt="" id="weatherIcon">
-        <div id="cityname"></div>
-        <div id="temperature"></div>
-        <div id="minmax"></div>
-        <div id="weatherDescriptionHeader"></div>
-        <div id="windSpeed" class="info"></div>
-        <div id="humidity" class="info"></div>
+        <ul id="weatherInfo" class="weatherInfo">
+            <img src="sunicon.png" id="weatherIcon" class="weatherIcon">
+            <li id="cityname"></li>
+            <li id="temperature"></li>
+            <li id="minmax" class="info"></li>
+            <li id="weatherDescriptionHeader" class="weatherDescriptionHeader"></li>
+            <li id="windSpeed" class="info"></li>
+            <li id="humidity" class="info"></li>
+        </ul>
     </div>
     <footer>
         <span class="page-footer">Made with &#127752; by 

@@ -42,11 +42,6 @@ h1 {
     color: #EC7775;
 }
 
-.search--city {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
 
 #citynameinput{
     -webkit-appearance: none;
@@ -83,6 +78,18 @@ button:hover{
     color: black;
 }
 
+.location--button {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-family: 'B612', sans-serif;
+    color: #EC7775;
+}
+
 .locbtn{
         background-color: transparent;
         border: none;
@@ -92,8 +99,12 @@ button:hover{
         color: #EC7775;
 }
 
-#cityname{
-    margin-top:  50px;
+ul {
+    list-style-type: none;
+}
+
+.weatherInfo {
+    margin-top: 50px;
     text-align: center;
     font-size: 25px;
     font-family: 'B612', sans-serif;
@@ -101,48 +112,29 @@ button:hover{
     
 }
 
-#temperature{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Karla', sans-serif;
-    color: #EC7775;
-}
 
 .info{
     text-align: center;
     font-size: 15px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #EC7775;
 }
 
-#weatherDescriptionHeader{
+.weatherDescriptionHeader{
     text-align: center;
     font-size: 20px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #EC7775;
 }
 
-#country{
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Karla', sans-serif;
-    color: #EC7775;
-}
 
-#minmax{
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Karla', sans-serif;
-    color: #EC7775;
-}
-
-#weatherIcon{
+.weatherIcon{
     height: 70px;
     width: 70px;
     position: absolute;
     top:50%;
     left:50%;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-left: -30px;
 }
 
@@ -154,10 +146,4 @@ button:hover{
     bottom: 0;
     text-shadow: 1px 1px 2px black;
     display: block;
-}
-
-.location--button {
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
