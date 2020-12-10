@@ -1,20 +1,19 @@
 .topnav {
-    background-color:transparent;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+    padding: 0px 0;
     list-style-type: none;
     text-align: center;
 }
 
 .topnav a{
-    float: left;
-    color: #6F6F6F;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
     font-size: 17px;
     font-family: 'B612', sans-serif;
+    text-decoration: none;
+
+    padding: 14px 16px;
+    float: left;
+
+    color: #6F6F6F;
 }
 
 .topnav a:hover {
@@ -38,15 +37,16 @@ body {
     color:#6F6F6F;
     font-weight: bold;
 
-    margin: 70px 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
     
     cursor: default;
 }
 
 .search--city {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -90,9 +90,9 @@ button:hover{
 }
 
 .location--button {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     border: none;
     margin-top: 10px;
@@ -101,23 +101,28 @@ button:hover{
     font-family: 'B612', sans-serif;
     
     color:#6F6F6F;
+    
     cursor: pointer;
 }
 
 .locbtn{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 15px 20px;
-        font-family: 'B612', sans-serif;
-        color:#6F6F6F;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    
+    font-family: 'B612', sans-serif;
+    
+    color:#6F6F6F;
 }
 
 .weather--info {
     margin-top: 10px;
+    
     text-align: center;
     font-size: 25px;
     font-family: 'B612', sans-serif;
+    
     color: #6F6F6F;
     
 }
@@ -155,11 +160,13 @@ ul {
 
 .page-footer{
     font-family: 'B612', sans-serif;
-    padding: 50px 50px;
+    text-shadow: 1px 1px 2px black;
+
     color: white;
+    padding: 30px 30px;
+
     position: absolute;
     bottom: 0;
-    text-shadow: 1px 1px 2px black;
     display: block;
 }
 
