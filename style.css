@@ -9,7 +9,7 @@
 
 .topnav a{
     float: left;
-    color: #EC7775;
+    color: #6F6F6F;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -28,7 +28,7 @@ a{
 }
 
 body {
-    background-image: url(sunbackgound.png);
+    background-color: #9CC3D5FF;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,7 +39,7 @@ h1 {
     text-align: center;
     font-size: 80px;
     font-family: 'Abril Fatface', cursive;
-    color: #EC7775;
+    color:#6F6F6F;
 }
 
 
@@ -48,7 +48,7 @@ h1 {
     width: 50%;
     max-width: 280px;
     height: 53px;
-    color: #EC7775;
+    color:#6F6F6F;
     font-size: 25px;
     font-family: 'B612', sans-serif;
     padding: 10px 15px;
@@ -59,8 +59,10 @@ h1 {
 }
 
 ::placeholder{
-    color: #EC7775;
+    color:#6F6F6F;
 }
+
+
 
 .button{
     background-color: transparent;
@@ -70,7 +72,7 @@ h1 {
     padding: 15px 20px;
     margin-left: 15px;
     font-family: 'B612', sans-serif;
-    color: #EC7775;
+    color: #6F6F6F;
 }
 
 button:hover{
@@ -85,9 +87,9 @@ button:hover{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 15px 20px;
+    padding: 10px 10px;
     font-family: 'B612', sans-serif;
-    color: #EC7775;
+    color:#6F6F6F;
 }
 
 .locbtn{
@@ -96,7 +98,7 @@ button:hover{
         cursor: pointer;
         padding: 15px 20px;
         font-family: 'B612', sans-serif;
-        color: #EC7775;
+        color:#6F6F6F;
 }
 
 ul {
@@ -108,7 +110,7 @@ ul {
     text-align: center;
     font-size: 25px;
     font-family: 'B612', sans-serif;
-    color: #EC7775;
+    color: #6F6F6F;
     
 }
 
@@ -117,14 +119,14 @@ ul {
     text-align: center;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
-    color: #EC7775;
+    color: #6F6F6F;
 }
 
 .weatherDescriptionHeader{
     text-align: center;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    color: #EC7775;
+    color: #6F6F6F;
 }
 
 
@@ -134,7 +136,7 @@ ul {
     position: absolute;
     top:50%;
     left:50%;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: -30px;
 }
 
@@ -146,4 +148,9 @@ ul {
     bottom: 0;
     text-shadow: 1px 1px 2px black;
     display: block;
+}
+
+.page-footer a:hover{
+    background-color: transparent;
+    color: black;
 }
