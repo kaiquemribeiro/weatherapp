@@ -59,6 +59,7 @@ function init(resultFromServer){
             weatherDescriptionHeader.innerText = '';
             minmax.innerText = '';
             weatherIcon.src = '';
+            flag.src = '';
     }
 
     console.log(resultFromServer);
