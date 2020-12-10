@@ -29,10 +29,6 @@ a{
 
 body {
     background-color: #9CC3D5FF;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;    
 }
 
 h1 {
@@ -40,39 +36,49 @@ h1 {
     font-size: 80px;
     font-family: 'Abril Fatface', cursive;
     color:#6F6F6F;
+    
+    cursor: default;
+}
+
+.search--city {
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 
-#citynameinput{
-    -webkit-appearance: none;
+.city--name--input{
     width: 50%;
     max-width: 280px;
     height: 53px;
-    color:#6F6F6F;
-    font-size: 25px;
-    font-family: 'B612', sans-serif;
+
     padding: 10px 15px;
     border: none;
     background: none;
     outline: none;
     border-bottom: 1px solid;
+    
+    color:#6F6F6F;
+
+    font-size: 25px;
+    font-family: 'B612', sans-serif;
 }
 
 ::placeholder{
     color:#6F6F6F;
 }
 
-
-
 .button{
     background-color: transparent;
     border: 1px solid;
-    cursor: pointer;
     border-radius: 4px;
     padding: 15px 20px;
     margin-left: 15px;
+    
     font-family: 'B612', sans-serif;
     color: #6F6F6F;
+
+    cursor: pointer;
 }
 
 button:hover{
@@ -101,11 +107,7 @@ button:hover{
         color:#6F6F6F;
 }
 
-ul {
-    list-style-type: none;
-}
-
-.weatherInfo {
+.weather--info {
     margin-top: 50px;
     text-align: center;
     font-size: 25px;
@@ -114,6 +116,19 @@ ul {
     
 }
 
+.weather--icon{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: 50px;
+    margin-left: -30px;
+}
+
+ul {
+    list-style-type: none;
+}
 
 .info{
     text-align: center;
@@ -122,22 +137,11 @@ ul {
     color: #6F6F6F;
 }
 
-.weatherDescriptionHeader{
+.weather--description--header{
     text-align: center;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: #6F6F6F;
-}
-
-
-.weatherIcon{
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-top: 50px;
-    margin-left: -30px;
 }
 
 .page-footer{
