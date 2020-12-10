@@ -31,11 +31,14 @@ body {
     background-color: #9CC3D5FF;
 }
 
-h1 {
+.title {
     text-align: center;
     font-size: 80px;
     font-family: 'Abril Fatface', cursive;
     color:#6F6F6F;
+    font-weight: bold;
+
+    margin: 70px 0;
     
     cursor: default;
 }
@@ -92,10 +95,13 @@ button:hover{
     align-items:center;
     background-color: transparent;
     border: none;
-    cursor: pointer;
-    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
     font-family: 'B612', sans-serif;
+    
     color:#6F6F6F;
+    cursor: pointer;
 }
 
 .locbtn{
@@ -108,7 +114,7 @@ button:hover{
 }
 
 .weather--info {
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     font-size: 25px;
     font-family: 'B612', sans-serif;
@@ -116,18 +122,16 @@ button:hover{
     
 }
 
-.weather--icon{
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-top: 50px;
-    margin-left: -30px;
-}
-
 ul {
     list-style-type: none;
+}
+
+.temperature {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+
+    padding: 2px;
 }
 
 .info{
@@ -135,13 +139,18 @@ ul {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     color: #6F6F6F;
+
+    padding: 2px;
 }
 
 .weather--description--header{
     text-align: center;
+    font-weight: bold;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    
     color: #6F6F6F;
+
 }
 
 .page-footer{
