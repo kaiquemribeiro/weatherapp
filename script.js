@@ -1,6 +1,6 @@
 let myAPI = '32226dc9cba44aa4ee6dd5aa71c0a863';
-let unit = 'metric';
-let search;
+const unit = 'metric';
+let searchCity;
 
 function getLocation(){
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -22,8 +22,8 @@ function searchLoc(latitude, longitude){
     })
 }
 
-function searchWather(search){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${myAPI}&units=${unit}`).then(result => {
+function searchWather(searchCity){
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${myAPI}&units=${unit}`).then(result => {
         return result.json();
     }).then(result => {
         init(result);
@@ -38,10 +38,12 @@ function init(resultFromServer){
     let cityname = document.getElementById('cityname');
     let minmax = document.getElementById('minmax');
     let weatherIcon = document.getElementById('weatherIcon');
+    let flag = document.getElementById('flag');
 
     if (resultFromServer.cod != 404){
         weatherIcon.src = 'https://openweathermap.org/img/wn/' + resultFromServer.weather[0].icon + '.png';
-        cityname.innerText = resultFromServer.name + ' - ' + resultFromServer.sys.country;
+        cityname.innerText = resultFromServer.name + ' - ';
+        flag.src = `https://www.countryflags.io/${resultFromServer.sys.country}/flat/64.png`;
         temperature.innerText = Math.floor(resultFromServer.main.temp) + 'ºC';
         minmax.innerText = 'Min ' + Math.floor(resultFromServer.main.temp_min)+ 'ºC - ' + ' Max ' + Math.floor(resultFromServer.main.temp_max) + 'ºC';
         humidity.innerText = 'Humidity ' + resultFromServer.main.humidity + '%';
@@ -58,4 +60,6 @@ function init(resultFromServer){
             minmax.innerText = '';
             weatherIcon.src = '';
     }
+
+    console.log(resultFromServer);
 }

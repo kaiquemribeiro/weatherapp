@@ -117,19 +117,13 @@ button:hover{
 }
 
 .weather--info {
-    margin-top: 10px;
-    
+
     text-align: center;
     font-size: 25px;
     font-family: 'B612', sans-serif;
     
-    color: #6F6F6F;
-    
-}
-
-ul {
-    list-style-type: none;
-}
+    color: #6F6F6F;  
+} 
 
 .temperature {
     text-align: center;
@@ -137,6 +131,8 @@ ul {
     font-family: 'Roboto', sans-serif;
 
     padding: 2px;
+
+    color: #6F6F6F;
 }
 
 .info{
@@ -173,4 +169,8 @@ ul {
 .page-footer a:hover{
     background-color: transparent;
     color: black;
+}
+
+li {
+    list-style: none;
 }
