@@ -123,6 +123,8 @@ button:hover{
     font-family: 'B612', sans-serif;
     
     color: #6F6F6F;  
+
+    cursor: default;
 } 
 
 .temperature {
@@ -133,6 +135,8 @@ button:hover{
     padding: 2px;
 
     color: #6F6F6F;
+
+    cursor: default;
 }
 
 .info{
@@ -142,6 +146,8 @@ button:hover{
     color: #6F6F6F;
 
     padding: 2px;
+
+    cursor: default;
 }
 
 .weather--description--header{
@@ -151,6 +157,8 @@ button:hover{
     font-family: 'Roboto', sans-serif;
     
     color: #6F6F6F;
+
+    cursor: default;
 
 }
 
