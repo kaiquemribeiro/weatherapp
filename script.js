@@ -29,6 +29,7 @@ function searchWather(searchCity){
         init(result);
     })
 }
+
 function init(resultFromServer){
 
     let weatherDescription = document.getElementById('weatherDescriptionHeader');
@@ -42,7 +43,7 @@ function init(resultFromServer){
 
     if (resultFromServer.cod != 404){
         weatherIcon.src = 'https://openweathermap.org/img/wn/' + resultFromServer.weather[0].icon + '.png';
-        cityname.innerText = resultFromServer.name + ' - ';
+        cityname.innerText = resultFromServer.name;
         flag.src = `https://www.countryflags.io/${resultFromServer.sys.country}/flat/64.png`;
         temperature.innerText = Math.floor(resultFromServer.main.temp) + 'ºC';
         minmax.innerText = 'Min ' + Math.floor(resultFromServer.main.temp_min)+ 'ºC - ' + ' Max ' + Math.floor(resultFromServer.main.temp_max) + 'ºC';
@@ -59,7 +60,7 @@ function init(resultFromServer){
             weatherDescriptionHeader.innerText = '';
             minmax.innerText = '';
             weatherIcon.src = '';
-            flag.src = '';
+            flag.src = "transparent_icon.png";
     }
 
     console.log(resultFromServer);
