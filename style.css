@@ -1,184 +1,181 @@
 .topnav {
-    padding: 0px 0;
-    list-style-type: none;
-    text-align: center;
+  padding: 0px 0;
+  list-style-type: none;
+  text-align: center;
 }
 
-.topnav a{
-    text-align: center;
-    font-size: 17px;
-    font-family: 'B612', sans-serif;
-    text-decoration: none;
+.topnav a {
+  text-align: center;
+  font-size: 17px;
+  font-family: "B612", sans-serif;
+  text-decoration: none;
 
-    padding: 14px 16px;
-    float: left;
+  padding: 14px 16px;
+  float: left;
 
-    color: #6F6F6F;
+  color: #6f6f6f;
 }
 
 .topnav a:hover {
-    background-color: transparent;
-    color: black;
+  background-color: transparent;
+  color: black;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 body {
-    background-color: #9CC3D5FF;
+  background-color: #9cc3d5ff;
 }
 
 .title {
-    text-align: center;
-    font-size: 80px;
-    font-family: 'Abril Fatface', cursive;
-    color:#6F6F6F;
-    font-weight: bold;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Abril Fatface", cursive;
+  color: #6f6f6f;
+  font-weight: bold;
 
-    padding-top: 100px;
-    padding-bottom: 50px;
-    
-    cursor: default;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  cursor: default;
 }
 
 .search--city {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.city--name--input {
+  width: 50%;
+  max-width: 280px;
+  height: 53px;
 
-.city--name--input{
-    width: 50%;
-    max-width: 280px;
-    height: 53px;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid;
 
-    padding: 10px 15px;
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 1px solid;
-    
-    color:#6F6F6F;
+  color: #6f6f6f;
 
-    font-size: 25px;
-    font-family: 'B612', sans-serif;
+  font-size: 25px;
+  font-family: "B612", sans-serif;
 }
 
-::placeholder{
-    color:#6F6F6F;
+::placeholder {
+  color: #6f6f6f;
 }
 
-.button{
-    background-color: transparent;
-    border: 1px solid;
-    border-radius: 4px;
-    padding: 15px 20px;
-    margin-left: 15px;
-    
-    font-family: 'B612', sans-serif;
-    color: #6F6F6F;
+.button {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 15px 20px;
+  margin-left: 15px;
 
-    cursor: pointer;
+  font-family: "B612", sans-serif;
+  color: #6f6f6f;
+
+  cursor: pointer;
 }
 
-button:hover{
-    background-color: transparent;
-    color: black;
+button:hover {
+  background-color: transparent;
+  color: black;
 }
 
 .location--button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    
-    font-family: 'B612', sans-serif;
-    
-    color:#6F6F6F;
-    
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  font-family: "B612", sans-serif;
+
+  color: #6f6f6f;
+
+  cursor: pointer;
 }
 
-.locbtn{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 15px 20px;
-    
-    font-family: 'B612', sans-serif;
-    
-    color:#6F6F6F;
+.locbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 15px 20px;
+
+  font-family: "B612", sans-serif;
+
+  color: #6f6f6f;
 }
 
 .weather--info {
+  text-align: center;
+  font-size: 25px;
+  font-family: "B612", sans-serif;
 
-    text-align: center;
-    font-size: 25px;
-    font-family: 'B612', sans-serif;
-    
-    color: #6F6F6F;  
+  color: #6f6f6f;
 
-    cursor: default;
-} 
+  cursor: default;
+}
 
 .temperature {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
 
-    padding: 2px;
+  padding: 2px;
 
-    color: #6F6F6F;
+  color: #6f6f6f;
 
-    cursor: default;
+  cursor: default;
 }
 
-.info{
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    color: #6F6F6F;
+.info {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #6f6f6f;
 
-    padding: 2px;
+  padding: 2px;
 
-    cursor: default;
+  cursor: default;
 }
 
-.weather--description--header{
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    
-    color: #6F6F6F;
+.weather--description--header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
 
-    cursor: default;
+  color: #6f6f6f;
 
+  cursor: default;
 }
 
-.page-footer{
-    font-family: 'B612', sans-serif;
-    text-shadow: 1px 1px 2px black;
+.page-footer {
+  font-family: "B612", sans-serif;
+  text-shadow: 1px 1px 2px black;
 
-    color: white;
-    padding: 30px 30px;
+  color: white;
+  padding: 30px 30px;
 
-    position: absolute;
-    bottom: 0;
-    display: block;
+  position: absolute;
+  bottom: 0;
+  display: block;
 }
 
-.page-footer a:hover{
-    background-color: transparent;
-    color: black;
+.page-footer a:hover {
+  background-color: transparent;
+  color: black;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
