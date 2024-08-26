@@ -53,7 +53,7 @@ function init(resultFromServer) {
       resultFromServer.weather[0].icon +
       ".png";
     cityname.innerText = resultFromServer.name;
-    flag.src = `https://www.countryflags.io/${resultFromServer.sys.country}/flat/64.png`;
+    flag.src = `https://flagsapi.com/${resultFromServer.sys.country}/flat/64.png`;
     temperature.innerText = Math.floor(resultFromServer.main.temp) + "ºC";
     minmax.innerText =
       "Min " +
